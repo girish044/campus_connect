@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CampusConnect - My Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">🎓 CampusConnect</div>
+    <div class="nav-links">
+      <a href="marketplace.html">🏪 Marketplace</a>
+      <a href="mylistings.html" class="active">📋 My Listings</a>
+      <a href="profile.html">👤 Profile</a>
+      <a href="#" onclick="logout()">🚪 Logout</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h2>📋 My Listings</h2>
+      <button class="btn btn-success btn-sm" onclick="window.location.href='post.html'">+ Post New Item</button>
+    </div>
+
+    <div id="myListingMsg" class="msg" style="display:none;"></div>
+    <div id="myListingContainer" class="listing-grid">
+      <p class="loading-text">Loading your listings...</p>
+    </div>
+  </div>
+
+  <!-- EDIT MODAL -->
+  <div id="editModal" class="modal" style="display:none;">
+    <div class="modal-box">
+      <h3>Edit Listing</h3>
+
+      <input type="hidden" id="editId" />
+
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" id="editTitle" />
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <select id="editCategory">
+          <option value="Books">📚 Books</option>
+          <option value="Electronics">💻 Electronics</option>
+          <option value="Furniture">🪑 Furniture</option>
+          <option value="Clothing">👕 Clothing</option>
+          <option value="Cycle">🚲 Cycle / Bike</option>
+          <option value="Notes">📓 Notes</option>
+          <option value="Hostel Items">🛏️ Hostel Items</option>
+          <option value="Other">📦 Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="editDescription" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Price (₹)</label>
+        <input type="number" id="editPrice" />
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="saveEdit()">Save Changes</button>
+        <button class="btn btn-secondary" onclick="closeEditModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 CampusConnect &mdash; Made with ❤️ for college students
+  </footer>
+
+  <script src="mylistings.js"></script>
+</body>
+</html>
