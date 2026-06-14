@@ -1,4 +1,4 @@
-const API = "http://https://campus-connect-79vr.onrender.com/api/listings";
+const API = "https://campus-connect-79vr.onrender.com/api/listings";
 
 //  to Check if user is logged in or not
 const user = JSON.parse(localStorage.getItem("user"));
