@@ -1,4 +1,4 @@
-const API = "http://localhost:8081/api/users";
+const API = "http://https://campus-connect-79vr.onrender.com/api/users";
 
 function showSignup() {
   document.getElementById("loginSection").style.display = "none";

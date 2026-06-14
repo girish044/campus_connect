@@ -1,4 +1,4 @@
-const API = "http://localhost:8081/api/listings";
+const API = "http://https://campus-connect-79vr.onrender.com/api/listings";
 
 const user = JSON.parse(localStorage.getItem("user"));
 if (!user) {
