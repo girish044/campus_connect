@@ -1,0 +1,7 @@
+com\example\campusconnect\listing\Listing.class
+com\example\campusconnect\listing\ListingController.class
+com\example\campusconnect\listing\ListingRepository.class
+com\example\campusconnect\CampusConnectApplication.class
+com\example\campusconnect\auth\User.class
+com\example\campusconnect\auth\UserRepository.class
+com\example\campusconnect\auth\UserController.class
